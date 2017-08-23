@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ServletExample">
+    <Resource
+            driverClassName="com.mysql.jdbc.Driver"
+            maxActive="4"
+            maxIdle="2"
+            maxWait="5000"
+            name="jdbc/ContactBookDS"
+            username="root"
+            password="root"
+            type="javax.sql.DataSource"
+            url="jdbc:mysql://127.0.0.1:3306/contact_book"
+            validationQuery="SELECT 1">
+    </Resource>
+</Context>
