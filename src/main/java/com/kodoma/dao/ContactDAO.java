@@ -32,7 +32,7 @@ public class ContactDAO extends Observable implements DAO<User> {
             try {
                 instance = new ContactDAO();
                 Context ctx = new InitialContext();
-                instance.dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/ContactBookDS");
+                instance.dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/servletexample");
                 connection = dataSource.getConnection();
 
             } catch (NamingException | SQLException e) {

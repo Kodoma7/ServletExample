@@ -17,6 +17,7 @@ public class HelloWorldServlet extends HttpServlet {
         System.out.println("start");
         ContactDAO dao = ContactDAO.getInstance();
         System.out.println("stop");
+        //из дао в реквевст -> jsp
 
         PrintWriter pw = resp.getWriter();
         pw.println("<H1>Hello:)</H1>");
